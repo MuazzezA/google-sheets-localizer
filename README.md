@@ -22,6 +22,10 @@ Example:
 | greeting  | Hello     | Merhaba      | Bonjour     |
 | farewell  | Goodbye   | Hoşça kal    | Au revoir   |
 
+<img width="500" alt="example" src="https://github.com/user-attachments/assets/e4b74947-2656-4fe7-b87e-69e5dbc541fe" />
+
+> **Note:** By default, the tool starts reading data from the **3rd row** of the sheet (assuming the 1st row contains headers and the 2nd row contains the first data row).  
+> You can adjust this behavior by changing the `GOOGLE_SHEET_RANGE` value in your `.env` file to specify a different starting row.
 
 ---
 
@@ -53,7 +57,7 @@ GOOGLE_SHEET_RANGE=Sheet1!A1:Z1000
 ### 5. Run the Localizer
 
 Run the command to fetch the latest translations and generate localization files:
-> **Note:** By default, the tool starts reading data from the **3rd row** of the sheet (assuming the 1st row contains headers and the 2nd row contains the first data row).
+
 
 ```bash
 npx generate-localize

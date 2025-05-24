@@ -90,7 +90,7 @@ Save output files into the localize folder at the root of your project.
 
 ### License
 
-ISC
+MIT
 
 ---
 

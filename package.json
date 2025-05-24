@@ -12,9 +12,17 @@
   "bin": {
     "generate-localize": "./dist/src/cli.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuazzezA/google-sheets-localizer.git"
+  },
+  "keywords": ["localization", "google sheets", "i18n", "localize", "cli"],
+  "author": "MuazzezA (https://www.npmjs.com/~maazez)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuazzezA/google-sheets-localizer/issues"
+  },
+  "homepage": "https://github.com/MuazzezA/google-sheets-localizer#readme",
   "dependencies": {
     "dotenv": ">=16.0.0",
     "googleapis": ">=149.0.0"

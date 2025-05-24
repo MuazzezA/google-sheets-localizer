@@ -1,0 +1,26 @@
+{
+  "name": "google-sheets-localizer",
+  "version": "1.0.0",
+  "description": "A tool to fetch and generate localization files from Google Sheets.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "generate-localize": "./dist/src/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": ">=16.0.0",
+    "googleapis": ">=149.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

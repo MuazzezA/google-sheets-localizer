@@ -4,16 +4,28 @@ A powerful tool designed to simplify your localization workflow by fetching tran
 
 ---
 
+
+## Install the package ⚡️
+
+   ```bash
+   npm install --save-dev generate-localize
+   ```
+   ```bash
+   yarn add --dev generate-localize
+   ```
+
+
 ## Getting Started 🚀
 
 Follow these steps to set up and use the localizer tool in your project.
+
 
 ### 1. Create Your Google Sheet 📝
 
 - Create a new Google Sheet to manage your localization keys and translations.
 - Structure your sheet as follows:
     - **Row 1:** First column should be the key name (e.g. `greeting`), subsequent columns should be language codes (e.g. `en`, `tr`, `fr`).
-    - **Row 2 onwards:** Fill in your translation keys and corresponding translations for each language.
+    - **Row 3 onwards:** Fill in your translation keys and corresponding translations for each language.
 
 Example:
 
@@ -54,7 +66,9 @@ GOOGLE_CREDENTIALS_PATH=/absolute/path/to/your/credentials.json
 GOOGLE_SHEET_RANGE=Sheet1!A1:Z1000
 ```
 
-### 5. Run the Localizer ▶️
+> For `GOOGLE_CREDENTIALS_PATH` it can be used from file or absolute, if not found an error is given.
+
+### 5. Run the Localizer ▶️ 
 
 Run the command to fetch the latest translations and generate localization files:
 
@@ -64,7 +78,7 @@ npx generate-localize
 ```
 The tool will:
 
-Read the Google Sheet starting from row 2 (row 1 is assumed to be headers).
+Read the Google Sheet starting from row 3 (row 1 is assumed to be the titles, row 2 is reserved for translation).
 Generate a JSON file with translations.
 Generate a TypeScript types file for localization keys.
 Save output files into the localize folder at the root of your project.
